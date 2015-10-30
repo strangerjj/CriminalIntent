@@ -84,8 +84,8 @@ public class CrimeLab {
             return true;
         } catch (Exception e) {
             Log.e(TAG, "Error saving crimes: ", e);
-            Toast toast = Toast.makeText(mAppContext, "False", Toast.LENGTH_SHORT);
-            toast.show();
+//            Toast toast = Toast.makeText(mAppContext, "False", Toast.LENGTH_SHORT);
+//            toast.show();
             return false;
         }
     }
