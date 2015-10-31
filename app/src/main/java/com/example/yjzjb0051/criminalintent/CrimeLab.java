@@ -1,13 +1,10 @@
 package com.example.yjzjb0051.criminalintent;
 
 import android.content.Context;
-import android.nfc.Tag;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -79,8 +76,8 @@ public class CrimeLab {
             mSerializer = new CriminalIntentJSONSerializer(mAppContext, FILENAME);
             mSerializer.saveCrimes(mCrimes);
             Log.d(TAG, "criems saved to file");
-            Toast toast = Toast.makeText(mAppContext, "Susses", Toast.LENGTH_SHORT);
-            toast.show();
+//            Toast toast = Toast.makeText(mAppContext, "Susses", Toast.LENGTH_SHORT);
+//            toast.show();
             return true;
         } catch (Exception e) {
             Log.e(TAG, "Error saving crimes: ", e);
